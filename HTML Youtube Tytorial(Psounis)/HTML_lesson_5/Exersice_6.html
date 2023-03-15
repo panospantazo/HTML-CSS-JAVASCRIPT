@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exersice 6</title>
+</head>
+
+<body>
+    <h1>ΠΩΣ ΘΑ ΠΛΗΡΩΣΕΙΣ;</h1>
+    <form action="/sendData" method="post">
+        <label for="payment">Πληρωμή</label>
+        <select name="selection">
+            <option value="Visa" id="payment">Visa</option>
+            <option value="Paypal" id="payment">Paypal</option>
+            <option value="Cash" selected id="payment">Cash</option>
+        </select><br>
+        <input type="submit" value="Αποστολή"> 
+        <input type="reset"  value="Διαγραφή">
+    </form> 
+</body>
+</html>
