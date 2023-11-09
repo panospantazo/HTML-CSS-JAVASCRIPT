@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Tutorial</title>
+  <style>
+   
+   /*Given by the Exersice*/   /*!*/
+   .post {
+      max-width: 500px;
+      margin: auto;
+      border: 1px black solid;
+    }
+    .icon_user, .icon_verified, .icon_public,
+    .social-bar-stats img, .social-bar-react img{
+      width: 30px;
+    }
+
+    /*!*/
+    
+    body
+    {
+        font-family: Segoe UI Historic , sans-serif;
+    }
+
+    /*Title, date , first paragraph*/ /*!*/
+   
+    
+
+    .post-description
+    {
+        font-family: 15px;
+    }
+        /*!*/
+
+      /*Hyperlinks*/  /*!*/
+    a
+    {
+        font-size: 1px;
+        text-decoration-line: none;
+        color: black;
+    }
+
+    #onion
+    {
+      font-size: 18px;
+    }
+
+    #date
+    {
+      font-size: 13px;
+    }
+
+    #more_comments
+    {
+      font-size: 15px;
+    }
+
+    #like
+    {
+      font-size: 12px;
+    }
+    
+    #reply
+    {
+      font-size: 12px;
+    }
+        
+    #profile_name
+    {
+      font-size: 13px;
+    }
+
+    a:hover
+    {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    .link-to-page:hover
+    {
+      text-decoration: none;
+    }
+
+    /*The title of the article*/
+
+    .title
+    {   
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(5,5,5);
+    }
+
+      /*!*/
+    /*Site's article*/
+
+    a > h3
+    {
+        font-weight: 100;
+        font-size: 13px;
+        color: rgb(101,103,107);
+        text-decoration-line: none;
+    }
+
+    .subtitle
+    {
+        color: rgb(101,103,107);
+        font-weight: 100;
+        font-size: 15px;
+    }
+
+    /*The react stats*/
+
+    .social-bar-stats
+    {
+        font-size: 14px;
+        color: rgb(101,103,107);
+    }
+
+    /*React's bar*/
+
+    .social-bar-react
+    {
+        font-size: 15px;
+        color: rgb(5,5,5);
+    }
+
+   /*Comment*/   /*!*/
+ 
+    .comments
+    {
+       color: rgb(5,5,5); 
+       font-weight: bold;
+    }
+
+    div:nth-child(4) > h3
+    {
+        font-weight: bold;
+        font-size: 13px;
+    }
+    div:nth-child(4) > p
+    {
+        font-size: 15px;
+        line-height: 20px;
+    }       /*!*/
+
+    /*Anything below comment*/ /*!*/
+
+    .dayspost-likes
+    {
+        font-weight: 500;
+        color:rgb(5,5,5);
+        font-size: 12px;
+    }
+
+    .more
+    {
+        color:rgb(101,103,107);
+        font-size: 15px;
+    } /*!*/
+ 
+  </style>
+</head>
+
+<body>
+  <div class="post">
+    <header>
+      <img class="icon_user" src="onion.png">
+      <a id="onion" href="#">The Onion <img class="icon_verified" src="fb_verified.png"></a>
+      <div>
+      <a id="date" href="#">2 February at 15:30 · <img class="icon_public" src="fb_public.png"></a>
+      </div>
+    </header>
+    <main>
+      <div class="post-description"> "As the business leaders
+        of this country, we promise to never,
+        ever stop fighting to ensure that the vast majority of
+        Americans aren’t able to afford the products they need or
+        live the life they want."
+      </div>
+      <a class="link-to-page" href="#" target="_blank">
+        <img class="post-image" src="fb_image.jpg">
+        <h3>THEONION.COM</h3>
+        <p class="title">Nation's CEOs Sign Pledge To Continue Fucking Over Americans</p>
+        <p class="subtitle">NEW YORK—Explaining that they wanted to put their commitment to oppression...</p>
+      </a>
+      <div class="social-bar-stats">
+        <img src="fb_like.svg">
+        <img src="fb_laugh.svg">
+        <a href="#">134 comments</a>
+        <a href="#">311 shares</a>
+      </div>
+      <div class="social-bar-react">
+        <div class="social-bar-like">
+          <img src="like.png">
+          <span>Like</span>
+        </div>
+        <div class="social-bar-comment">
+          <img src="comment.png">
+          <span>Comment</span>
+        </div>
+        <div class="social-bar-share">
+          <img src="share.png">
+          <span>Share</span>
+        </div>
+        <div class="comments">
+          <img src="unnamed_person.png">
+          <a id="profile_name" href="#">Chris Clark</a>
+          <p>
+            They went on to announce to initiatives that sound like
+            they're good for the world but really just make it
+            easier to make lots more money.
+          </p>
+          <span>
+          <a id="like"href="#">Like</a>
+          <a id="reply" href="#">Reply</a>
+          </span>
+          <span class="dayspost-likes">
+          <span>2d</span>
+          <span><img src="fb_like.svg">19</span>
+           </span>
+        </div>
+        <div class="more">
+          <a id="more_comments" href="#">View more comments</a>
+          <span>1 of 115</span>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
